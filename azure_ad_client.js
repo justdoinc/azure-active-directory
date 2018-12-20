@@ -28,7 +28,7 @@ AzureAd.requestCredential = function (options, credentialRequestCompleteCallback
     var queryParams = {
         client_id: config.clientId,
         response_type: 'code',
-        redirect_uri: OAuth._redirectUri('azureAd', config),
+        redirect_uri: config.redirectUri || OAuth._redirectUri('azureAd', config),
         scope: scope,
         response_mode: 'query',
         state: OAuth._stateParam(loginStyle, credentialToken),
