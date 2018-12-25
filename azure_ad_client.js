@@ -55,6 +55,6 @@ AzureAd.requestCredential = function (options, credentialRequestCompleteCallback
         loginUrl: loginUrl,
         credentialRequestCompleteCallback: credentialRequestCompleteCallback,
         credentialToken: credentialToken,
-        popupOptions: { height: 600 }
+        popupOptions: { height: config.height || 600 }
     });
 };
