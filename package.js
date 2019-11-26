@@ -1,7 +1,7 @@
 Package.describe({
     summary: 'Azure Active Directory OAuth flow',
     version: '1.0.5',
-    name: 'qipo:azure-active-directory',
+    name: 'justdoinc:azure-active-directory',
     git: 'https://github.com/qipoco/azure-active-directory',
 });
 
