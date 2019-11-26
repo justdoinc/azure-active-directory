@@ -26,6 +26,7 @@ AzureAd.requestCredential = function (options, credentialRequestCompleteCallback
     var credentialToken = Random.secret();
 
     var queryParams = {
+        msafed: 0, // Not sure whether this is needed or not (I didn't notice any difference), seems better to have https://github.com/versolearning/azure-active-directory/commit/a6c5aee9a02dbc2d92bd032f1eb16c67aa8736cb
         client_id: config.clientId,
         response_type: 'code',
         redirect_uri: config.redirectUri || OAuth._redirectUri('azureAd', config),
