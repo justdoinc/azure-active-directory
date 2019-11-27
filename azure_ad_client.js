@@ -19,7 +19,7 @@ AzureAd.requestCredential = function (options, credentialRequestCompleteCallback
         return;
     }
 
-    var tenant = options.tenant || 'common';
+    var tenant = config.tennantId || 'common';
     var scope = (options.scope) ? options.scope.join(' ') : 'user.read';
 
     var loginStyle = OAuth._loginStyle('azureAd', config, options);
