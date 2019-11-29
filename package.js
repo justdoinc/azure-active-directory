@@ -25,4 +25,6 @@ Package.onUse(function(api) {
     );
     api.addFiles('azure_ad_server.js', 'server');
     api.addFiles('azure_ad_client.js', 'client');
+
+    api.addFiles('azure_ad_accounts.js');
 });
